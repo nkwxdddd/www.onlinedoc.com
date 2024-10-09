@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (max-width: 699px) {
+
+    #menu{
+        background-color: white;
+        display: block;
+        width: 280px;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        padding: 30px 0;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 14px;
+        opacity: 0;
+        transition: all 0.3s ease;     
+    }
+
+    #menu.active {
+        right: 10px;
+        opacity: 1;
+    }
+
+
+
+    #menu li{
+        padding: 1rem;                          /* Making space b/w items in the navbar */
+    }
+
+    #menu li a{
+        color: black;  
+    }
+
+    #menu li a:hover{
+        background-color: white;
+        color: green   
+    }
+
+    #bar{
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    select{
+        padding: 10px;
+        margin:  15px;
+        margin-left: 3rem;
+    }
+
+    #w-btn{
+        margin: 20px 0 0 50px; 
+        background: black;
+        color: white
+    }
+
+    .hero-box{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        align-items: start;
+        padding: 8rem 0;
+    }
+    
+    .h-left{
+        width: 109%;
+    }
+
+    .h-left h1{
+        font-size: 40px;
+    }
+
+    .fe-box div{
+        background-color: rgb(7, 5, 5);
+        border-radius: 20px;
+        
+    }
+
+    .fe-box div{
+        text-align: center;
+    }
+
+    .features .fe-box div{
+        width: 100%; 
+    }
+
+    .features .fe-box{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .see .see-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ondemand{
+        align-items: center; 
+    }
+    
+    .ondemand h2{
+        font-size: 25px;
+        margin-right: 2rem;
+    }
+
+    .ondemand .ondem-box{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #getsarted .get-box{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pic-start img{
+        width: 100%;
+    }
+
+    .get-text{
+        width: 100%;
+    }
+
+    .heading-text h1{
+        font-size: 35px;
+        font-weight: 500;
+        margin-top: 1.5rem;
+    }
+
+    .testimony h1{
+        font-size: 1rem;
+    }
+
+    .test-container  .mySlides q{
+        font-size: 20px;
+    }
+
+    .test-container .mySlides p{
+        font-size: 15px;
+    }
+
+    /* Footer section design */
+
+    .top i{
+        
+        margin: 1rem 1rem 0 0;
+    }
+
+    .bottom div{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    
+    
+
+
+    
+
+}

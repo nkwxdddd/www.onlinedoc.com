@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    position: relative;
+}
+
+/* Global css */
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+h3{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+#w-btn{
+    margin-left: 40px; 
+    background: white;
+    color: #000;
+    padding: 9px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#g-btn{
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 9px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.sec-space{
+    padding: 4rem 0;
+}
+
+.extra-space{
+    padding-top: 8rem;
+}
+
+.obj-width{
+    max-width: 1200px;
+    margin-top: auto;
+}
+
+/* Navbar design section */
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+#navbar .logo{
+    width: 130px;
+}
+
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+#menu li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: none;
+    border: none;
+}
+
+#menu li:is(:hover, :focus-visible){
+    transform: translateY(-3px); 
+}
+
+
+#bar{
+    color: white;
+    display: none;
+}
+
+select{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+/* Hero section */
+
+.hero-box{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    margin: 3rem;
+}
+
+.h-left{
+    width: 45%;
+    color: inherit;
+}
+
+.h-left p{
+    padding: 1.6rem 0;
+}
+
+.search{
+    position: relative;   
+}
+
+.search input{
+    width: 100%;
+    height: 4rem;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline:  none;
+    border: navajowhite;
+}
+
+.search a{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+   
+.h-right .background-clip{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 70vh;
+}
+
+/* End of hero section */
+
+
+
+/* Features section */
+
+.features{
+    margin-top: 6rem;
+    background-color: snow;
+    border-radius: 15% 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.features{
+    border-radius: 50px
+}
+
+.fe-box h3{
+    color: white; 
+}
+
+.fe-box p{
+    color: white;
+}
+
+
+.features .fe-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fe-box div{
+    background-color: rgb(7, 5, 5);
+    padding: 2rem 0;
+    border-radius: 20px;
+    
+}
+
+.features .fe-box div{
+    width: 200px;
+}
+
+.features .fe-box div h3{
+    font-weight: 600;
+}
+
+.features .fe-box div p{
+    margin: 0.4rem;
+}
+
+.features .fe-box{
+    margin-top: 3rem;
+}
+
+/* End of features section */
+
+/* Doctor section design */
+
+.see{
+    text-align: center;
+}
+
+.see span{
+    font-size: 20px;
+    color: #332c2c;
+}
+
+.see h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: #332c2c;
+}
+
+.see p{
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+}
+
+.see .see-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.see .see-box{
+    margin: 2rem;
+}
+
+.see-text .t-box a p{
+    font-size: 20px;
+    color: #000;
+    margin: 1rem;
+    border: 8px solid whitesmoke;
+    cursor: pointer;
+    background-color: white;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+}
+
+.see-text .t-box a p:hover{
+    background-color: gainsboro !important ;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+
+.see-text .t-box a i{
+    margin: 0 9px;
+    color: rgb(27, 24, 24);
+}
+
+.selector{
+    width: 350px;
+}
+
+#selectField{
+    width: 100%;
+    padding: 15px 20px; 
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px 30px 10px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#selectField i{
+    width: 12px;
+}
+
+#list{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.options{
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.options:hover{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hide{
+    visibility: hidden;
+
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.insur{
+    font-size: 20px;
+    color: #000;
+    margin: 1rem;
+    border: 3px solid darkgray;
+    cursor: pointer;
+    background-color: white;
+    padding: 2rem 2rem;
+    border-radius: 15% 10%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.insur p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;    
+}
+
+/* End of Doctor section design */
+
+
+
+/* on demand section design */
+
+.ondemand{
+    margin-left: 4rem; 
+}
+
+.ondemand .ondem-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ondemand .ondem-box div{
+    width: 100%;
+}    
+
+
+.ondemand .ondem-box img{
+    width: 80%;
+    margin-top: 3rem;
+    border-radius: 25px 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ondem-box h3{
+    margin-top: 1.5rem;
+}
+
+/* End of on demand section design */
+
+
+/* Banner section design */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./assets/pexels-karolina-grabowska-4386466.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+    border: 4px solid green;
+    border-radius: 10px 37px 46px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+#banner h4{
+    color: black;
+    font-size: 25px;
+}
+
+#banner h2{
+    color: black;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+#banner h4 span{
+    color: white;
+}
+
+#banner div{
+    width: 100%;
+}
+
+#banner div a img{
+    width: 15%;
+    margin: 15px;
+}
+
+/* End of banner section design */
+
+/* get started design section */
+
+#getsarted{
+    background-color: rgb(188, 205, 219);
+    height: 100%;
+    align-items: center;
+    border-radius: 20px 15px 0 0;
+}
+
+#getsarted .get-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.pic-start{
+    width: 100%;
+}
+
+.pic-start img{
+    width: 90%;
+    border-radius: 45px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.get-text{
+    width: 70%;
+}
+
+.heading-text h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.get-text .number{
+    background-color: rgba(0, 0, 0, 0.35);
+    color: whitesmoke;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.get-text span{
+    font-style: oblique;
+    font-size: 4rem;
+}
+
+.get-text h2{
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.get-text a button{
+    margin-top: 1.5rem;
+}
+
+/* End of get started design section */
+
+
+
+/*  Testimony design section */
+
+#testimony{
+    text-align: center;
+    
+}
+
+#testimony .test-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+#testimony .test-container{
+    position: relative;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 25px 15px 39px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    object-fit: cover;
+}
+
+.test-container .mySlides{
+
+    display: none;
+    padding: 100px;
+ 
+}
+
+.test-container #prev, #next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+#next{
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+}
+
+#prev:hover, #next:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+} 
+
+ 
+.dot-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+   background-color: #717171; 
+}
+
+.test-container  .mySlides q{
+    font-size: 25px;
+}
+
+.test-container .mySlides p{
+    font-size: 20px;
+    color: darkgreen;
+    margin-top: 1.5rem;
+}
+
+/* End of Testimony design section */
+
+footer{
+    background: #000;
+    color: rgb(216, 209, 209);
+    padding: 4rem 0;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top .logo{
+    width: 170px;
+    margin-bottom: 1rem;
+}
+
+.top i{
+    color: white;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.top a{
+    text-decoration: none;
+}
+
+.top a i:is(:hover, :focus-visible){ 
+    transform: translateY(-3px);
+}
+
+.bottom{
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+.bottom a:hover{
+    background-color: rgba(55, 209, 55, 0.616);
+    color: rgb(12, 10, 10);
+    border-radius: 6%;
+    text-align: center;
+}
+.active, .bottom a{
+    background-color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
